@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="급수표를 찍으면 선생님처럼 읽어 주는 받아쓰기 연습 앱" />
+    <meta name="theme-color" content="#fff8ee" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- PWA / iOS 홈 화면 앱 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="받쓰몬" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+
+    <!-- Pretendard 글꼴 (불러오지 못하면 시스템 한국어 글꼴 사용) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+
+    <title>받쓰몬 – 혼자 하는 받아쓰기</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>받쓰몬을 사용하려면 JavaScript를 켜 주세요.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
